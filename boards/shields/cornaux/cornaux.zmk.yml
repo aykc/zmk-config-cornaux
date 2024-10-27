@@ -1,0 +1,14 @@
+file_format: "1"
+id: cornaux
+name: Cornaux
+type: shield
+url: https://github.com/aykc/cornaux/
+requires: [pro_micro]
+exposes: [i2c_oled]
+features:
+  - keys
+  - display
+  - studio
+siblings:
+  - cornaux_left
+  - cornaux_right
