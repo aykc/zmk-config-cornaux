@@ -1,6 +1,6 @@
 file_format: "1"
 id: cornaux
-name: cornaux
+name: Cornaux
 type: shield
 url: https://github.com/aykc/cornaux/
 requires: [pro_micro]
