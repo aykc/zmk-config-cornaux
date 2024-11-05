@@ -22,3 +22,5 @@ include:
     shield: cornaux_left
   - board: nice_nano_v2
     shield: cornaux_right
+  - board: nice_nano_v2
+    shield: settings_reset
