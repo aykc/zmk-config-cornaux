@@ -48,7 +48,7 @@
 
     };
 
-/*    default_layout: default_layout {
+    default_layout: default_layout {
       compatible = "zmk,physical-layout";
       display-name = "Default Layout";
       transform = <&default_transform>;
@@ -99,7 +99,7 @@
           , <&key_physical_attrs 100 100  900  300       0     0     0>
           , <&key_physical_attrs 100 100 1000  300       0     0     0>
           ;
-    }; */
+    };
 };
 
 &pro_micro_i2c {
