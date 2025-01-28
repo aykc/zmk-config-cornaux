@@ -11,7 +11,7 @@
 #define EN 0
 #define RU 1
 #define GAME 2
-#define GAME 3
+#define GAME2 3
 #define COLE 4
 #define NAV 5
 #define SYM 6
