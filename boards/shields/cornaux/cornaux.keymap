@@ -72,10 +72,10 @@ ZMK_HOLD_TAP(hmr,
     ru_layer {
       display-name = "base ru";
       bindings = <
-        &kp ESCAPE  &kp &ru_y       &kp &ru_ts        &kp &ru_u         &kp &ru_k          &kp &ru_ye          &kp &ru_n     &kp &ru_g           &kp &ru_sh        &kp &ru_shch     &kp &ru_z        &kp BSPC
-        &kp TAB     &mt LGUI &ru_f  &mt LCTRL &ru_bi  &mt LSHIFT &ru_v  &mt LALT &ru_a     &kp &ru_p           &kp &ru_r     &mt RALT &ru_o      &mt RSHIFT &ru_l  &mt RCTRL &ru_d  &mt RGUI &ru_zh  &kp &ru_e
-        &kp CAPS    &kp &ru_ya      &kp &ru_ch        &kp &ru_s         &kp &ru_m          &kp &ru_i           &kp &ru_t     &kp &ru_soft        &kp &ru_b         &kp &ru_yu       &kp &ru_hard     &kp &ru_yo
-                                    &to EN            &kp LSHIFT        &lt SYM SPACE      &kp LALT            &kp RALT      &lt NAV RETURN      &kp RSHIFT        &none
+        &kp ESCAPE  &kp &ru_y        &kp &ru_ts         &kp &ru_u          &kp &ru_k           &kp &ru_ye          &kp &ru_n     &kp &ru_g            &kp &ru_sh         &kp &ru_shch      &kp &ru_z         &kp BSPC
+        &kp TAB     &hml LGUI &ru_f  &hml LCTRL &ru_bi  &hml LSHIFT &ru_v  &hml LALT &ru_a     &kp &ru_p           &kp &ru_r     &hml RALT &ru_o      &hml RSHIFT &ru_l  &hml RCTRL &ru_d  &hml RGUI &ru_zh  &kp &ru_e
+        &kp CAPS    &kp &ru_ya       &kp &ru_ch         &kp &ru_s          &kp &ru_m           &kp &ru_i           &kp &ru_t     &kp &ru_soft         &kp &ru_b          &kp &ru_yu        &kp &ru_hard      &kp &ru_yo
+                                     &to EN             &kp LSHIFT         &lt SYM SPACE       &kp LALT            &kp RALT      &lt NAV RETURN       &kp RSHIFT         &none
       >;
     };
 
