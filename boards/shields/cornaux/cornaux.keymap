@@ -20,16 +20,27 @@
 #define APPS 8
 #define ADJ 9
 
-#define QUICK_TAP_MS 175
+/* Left-hand HRMs. */
+ZMK_HOLD_TAP(hml,
+  flavor = "balanced";
+  tapping-term-ms = <280>;
+  quick-tap-ms = <175>;
+  require-prior-idle-ms = <150>;
+  bindings = <&kp>, <&kp>;
+  hold-trigger-key-positions = <KEYS_R THUMBS>;
+  hold-trigger-on-release;
+)
 
-#define MAKE_HRM(NAME, HOLD, TAP, TRIGGER_POS)                                 \
-  ZMK_HOLD_TAP(NAME, bindings = <HOLD>, <TAP>; flavor = "balanced";            \
-               tapping-term-ms = <280>; quick-tap-ms = <QUICK_TAP_MS>;         \
-               require-prior-idle-ms = <150>; hold-trigger-on-release;         \
-               hold-trigger-key-positions = <TRIGGER_POS>;)
-
-MAKE_HRM(hml, &kp, &kp, KEYS_R THUMBS) // Left-hand HRMs.
-MAKE_HRM(hmr, &kp, &kp, KEYS_L THUMBS) // Right-hand HRMs.
+/* Right-hand HRMs. */
+ZMK_HOLD_TAP(hmr,
+  flavor = "balanced";
+  tapping-term-ms = <280>;
+  quick-tap-ms = <175>;
+  require-prior-idle-ms = <150>;
+  bindings = <&kp>, <&kp>;
+  hold-trigger-key-positions = <KEYS_L THUMBS>;
+  hold-trigger-on-release;
+)
 
 / {
   conditional_layers {
@@ -61,9 +72,9 @@ MAKE_HRM(hmr, &kp, &kp, KEYS_L THUMBS) // Right-hand HRMs.
     ru_layer {
       display-name = "base ru";
       bindings = <
-        &kp ESCAPE  &kp &ru_y        &kp &ru_ts         &kp &ru_u          &kp &ru_k           &kp &ru_ye          &kp &ru_n     &kp &ru_g            &kp &ru_sh         &kp &ru_shch      &kp &ru_z         &kp BSPC
-        &kp TAB     &hml LGUI &ru_f  &hml LCTRL &ru_bi  &hml LSHIFT &ru_v  &hml LALT &ru_a     &kp &ru_p           &kp &ru_r     &hml RALT &ru_o      &hml RSHIFT &ru_l  &hml RCTRL &ru_d  &hml RGUI &ru_zh  &kp &ru_e
-        &kp CAPS    &kp &ru_ya       &kp &ru_ch         &kp &ru_s          &kp &ru_m           &kp &ru_i           &kp &ru_t     &kp &ru_soft         &kp &ru_b          &kp &ru_yu        &kp &ru_hard      &kp &ru_yo
+        &kp ESCAPE  &ru_y            &ru_ts             &ru_u              &ru_k               &ru_ye              &ru_n         &ru_g                &ru_sh             &ru_shch          &ru_z             &kp BSPC
+        &kp TAB     &hml LGUI &ru_f  &hml LCTRL &ru_bi  &hml LSHIFT &ru_v  &hml LALT &ru_a     &ru_p               &ru_r         &hml RALT &ru_o      &hml RSHIFT &ru_l  &hml RCTRL &ru_d  &hml RGUI &ru_zh  &ru_e
+        &kp CAPS    &ru_ya           &ru_ch             &ru_s              &ru_m               &ru_i               &ru_t         &ru_soft             &ru_b              &ru_yu            &ru_hard          &ru_yo
                                      &to EN             &kp LSHIFT         &lt SYM SPACE       &kp LALT            &kp RALT      &lt NAV RETURN       &kp RSHIFT         &kp DEL
       >;
     };
