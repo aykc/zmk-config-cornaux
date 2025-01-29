@@ -72,9 +72,9 @@ ZMK_HOLD_TAP(hmr,
     ru_layer {
       display-name = "base ru";
       bindings = <
-        &kp ESCAPE  &ru_y            &ru_ts             &ru_u              &ru_k               &ru_ye              &ru_n         &ru_g                &ru_sh             &ru_shch          &ru_z             &kp BSPC
-        &kp TAB     &hml LGUI &ru_f  &hml LCTRL &ru_bi  &hml LSHIFT &ru_v  &hml LALT &ru_a     &ru_p               &ru_r         &hml RALT &ru_o      &hml RSHIFT &ru_l  &hml RCTRL &ru_d  &hml RGUI &ru_zh  &ru_e
-        &kp CAPS    &ru_ya           &ru_ch             &ru_s              &ru_m               &ru_i               &ru_t         &ru_soft             &ru_b              &ru_yu            &ru_hard          &ru_yo
+        &kp ESCAPE  &ru_y            &ru_ts             &ru_u              &ru_k               &ru_ye              &ru_n         &ru_g                &ru_sh             &ru_shch          &ru_z            &kp BSPC
+        &kp TAB     &ru_f            &ru_bi             &ru_v              &ru_a               &ru_p               &ru_r         &ru_o                &ru_l              &ru_d             &ru_zh           &ru_e
+        &kp CAPS    &ru_ya           &ru_ch             &ru_s              &ru_m               &ru_i               &ru_t         &ru_soft             &ru_b              &ru_yu            &ru_hard         &ru_yo
                                      &to EN             &kp LSHIFT         &lt SYM SPACE       &kp LALT            &kp RALT      &lt NAV RETURN       &kp RSHIFT         &kp DEL
       >;
     };
