@@ -64,7 +64,7 @@ ZMK_HOLD_TAP(hmr,
     //├───────────────┼───────────────┼───────────────┼───────────────┼───────────────┼───────────────┤ ├───────────────┼───────────────┼───────────────┼───────────────┼───────────────┼───────────────┤
         &kp CAPS        &kp Z           &kp X           &kp C           &kp V           &kp B             &kp N           &kp M           &kp COMMA       &kp DOT         &kp FSLH        &kp BSLH
     //╰───────────────┼───────────────┼───────────────┼───────────────┼───────────────┼───────────────┤ ├───────────────┼───────────────┼───────────────┼───────────────┼───────────────┼───────────────╯
-                                        &to RU          &kp LSHIFT      &lt SYM SPACE   &kp LALT          &kp RALT        &lt NAV RET     &kp RSHIFT      &none
+                                        &to RU          &kp LSHIFT      &lt SYM SPACE   &kp LALT          &kp RALT        &lt NAV RET     &kp RSHIFT      &kp DEL
       //                              ╰───────────────┴───────────────┴───────────────┴───────────────╯ ╰───────────────┴───────────────┴───────────────┴───────────────╯
       >;
     };
@@ -75,7 +75,7 @@ ZMK_HOLD_TAP(hmr,
         &kp ESCAPE  &kp &ru_y        &kp &ru_ts         &kp &ru_u          &kp &ru_k           &kp &ru_ye          &kp &ru_n     &kp &ru_g            &kp &ru_sh         &kp &ru_shch      &kp &ru_z         &kp BSPC
         &kp TAB     &hml LGUI &ru_f  &hml LCTRL &ru_bi  &hml LSHIFT &ru_v  &hml LALT &ru_a     &kp &ru_p           &kp &ru_r     &hml RALT &ru_o      &hml RSHIFT &ru_l  &hml RCTRL &ru_d  &hml RGUI &ru_zh  &kp &ru_e
         &kp CAPS    &kp &ru_ya       &kp &ru_ch         &kp &ru_s          &kp &ru_m           &kp &ru_i           &kp &ru_t     &kp &ru_soft         &kp &ru_b          &kp &ru_yu        &kp &ru_hard      &kp &ru_yo
-                                     &to EN             &kp LSHIFT         &lt SYM SPACE       &kp LALT            &kp RALT      &lt NAV RETURN       &kp RSHIFT         &none
+                                     &to EN             &kp LSHIFT         &lt SYM SPACE       &kp LALT            &kp RALT      &lt NAV RETURN       &kp RSHIFT         &kp DEL
       >;
     };
 
@@ -105,12 +105,12 @@ ZMK_HOLD_TAP(hmr,
         &kp ESCAPE  &kp Q       &kp W        &kp F         &kp P          &kp B           &kp J     &kp L           &kp U         &kp Y        &kp SEMI       &kp BSPC
         &kp TAB     &mt LGUI A  &mt LCTRL R  &mt LSHIFT S  &mt LALT T     &kp G           &kp M     &mt RALT N      &mt RSHIFT E  &mt RCTRL I  &mt RGUI O     &kp SQT
         &kp CAPS    &kp Z       &kp X        &kp C         &kp D          &kp V           &kp K     &kp H           &kp COMMA     &kp DOT      &kp FSLH       &kp BSLH
-                                &to EN       &kp LSHIFT    &lt SYM SPACE  &kp LALT        &kp RALT  &lt NAV RETURN  &kp RSHIFT    &none
+                                &to EN       &kp LSHIFT    &lt SYM SPACE  &kp LALT        &kp RALT  &lt NAV RETURN  &kp RSHIFT    &kp DEL
       >;
     };
 
     nav_layer {
-      display-name = "media fun nav";
+      display-name = "nav fn med";
       bindings = <
         &kp  F1     &kp F2      &kp F3       &kp F4          &kp F5         &kp F6          &kp F7    &kp F8          &kp F9        &kp F10     &kp F11        &kp F12
         &kp C_RW    &kp C_PREV  &kp C_PP     &kp C_NEXT      &kp C_FF       &kp C_VOL_UP    &kp LEFT  &kp DOWN        &kp UP        &kp RIGHT   &kp C_BRI_UP   &trans
@@ -125,7 +125,7 @@ ZMK_HOLD_TAP(hmr,
         &kp GRAVE  &kp N1       &kp N2       &kp N3        &kp N4         &kp N5          &kp N6    &kp N7          &kp N8        &kp N9     &kp N0     &kp BSPC
         &trans     &trans       &trans       &kp TILDE     &kp LBRC       &kp LPAR        &kp RPAR  &kp RBRC        &kp PLUS      &kp UNDER  &kp QMARK  &kp PIPE
         &trans     &trans       &trans       &kp GRAVE     &kp LBKT       &kp LT          &kp GT    &kp RBKT        &kp EQUAL     &kp MINUS  &kp FSLH   &kp BSLH
-                                &to EN       &kp LSHIFT    &lt SYM SPACE  &kp LALT        &kp RALT  &lt NAV RETURN  &kp RSHIFT    &none
+                                &to EN       &kp LSHIFT    &lt SYM SPACE  &kp LALT        &kp RALT  &lt NAV RETURN  &kp RSHIFT    &kp DEL
       >;
     };
 
