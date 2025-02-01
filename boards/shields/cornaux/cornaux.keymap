@@ -10,7 +10,7 @@
 #include "zmk-helpers/unicode-chars/russian.dtsi"
 
 #define ___ &trans
-#define XXX $none
+#define XXX &none
 
 #define EN 0
 #define RU 1
