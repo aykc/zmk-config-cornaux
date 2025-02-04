@@ -137,7 +137,7 @@ ZMK_HOLD_TAP(hmr,
       display-name = "sym num";
       bindings = <
         &kp GRAVE  &kp N1       &kp N2       &kp N3        &kp N4         &kp N5          &kp N6    &kp N7          &kp N8        &kp N9     &kp N0     &kp BSPC
-        XXX        XXX          XXX          &kp TILDE     &kp LBRC       &kp LPAR        &kp RPAR  &kp RBRC        &kp PLUS      &kp UNDER  &kp QMARK  &kp PIPE
+        XXX        XXX          XXX          &kp TILDE     &kp LBRC       &kp LPAR        &kp RPAR  &kp RBRC        &kp PLUS      &kp UNDER  &kp SEMI   &kp SQT
         XXX        XXX          XXX          &kp GRAVE     &kp LBKT       &kp LT          &kp GT    &kp RBKT        &kp EQUAL     &kp MINUS  &kp FSLH   &kp BSLH
                                 &to EN       &kp LSHIFT    &lt SYM SPACE  &kp LALT        &kp RALT  &lt NAV RETURN  &kp RSHIFT    &kp DEL
       >;
