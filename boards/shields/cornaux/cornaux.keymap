@@ -68,7 +68,7 @@ ZMK_HOLD_TAP(hmr,
     //├───────────────┼───────────────┼───────────────┼───────────────┼───────────────┼───────────────┤ ├───────────────┼───────────────┼───────────────┼───────────────┼───────────────┼───────────────┤
         &kp CAPS        &kp Z           &kp X           &kp C           &kp V           &kp B             &kp N           &kp M           &kp COMMA       &kp DOT         &kp FSLH        &kp BSLH
     //╰───────────────┼───────────────┼───────────────┼───────────────┼───────────────┼───────────────┤ ├───────────────┼───────────────┼───────────────┼───────────────┼───────────────┼───────────────╯
-                                        XXX             &kp LSHIFT      &lt SYM SPACE   &kp LALT          &to FUN         &lt NAV RET     &kp RSHIFT      &kp DEL
+                                        XXX             &kp LSHIFT      &lt SYM SPACE   &kp LALT          &mo FUN         &lt NAV RET     &kp RSHIFT      &kp DEL
       //                              ╰───────────────┴───────────────┴───────────────┴───────────────╯ ╰───────────────┴───────────────┴───────────────┴───────────────╯
       >;
     };
@@ -116,10 +116,10 @@ ZMK_HOLD_TAP(hmr,
     nav_layer {
       display-name = "nav";
       bindings = <
-        &kp  F1     &kp F2      &kp F3       &kp F4          &kp F5         &kp F6          &kp F7    &kp F8          &kp F9        &kp F10     &kp F11        &kp F12
-        &kp C_RW    &kp C_PREV  &kp C_PP     &kp C_NEXT      &kp C_FF       &kp C_VOL_UP    &kp LEFT  &kp DOWN        &kp UP        &kp RIGHT   &kp C_BRI_UP   &trans
-        &kp PSCRN   &trans      &trans       &kp C_BKLT_TOG  &kp C_MUTE     &kp C_VOL_DN    &kp HOME  &kp PG_DN       &kp PG_UP     &kp END     &kp C_BRI_DN   &trans
-                                XXX          &kp LSHIFT      &lt SYM SPACE  &kp LALT        &kp RALT  &lt NAV RETURN  &kp RSHIFT    XXX
+        XXX         XXX         XXX          XXX             XXX            XXX             XXX       &kp PG_UP       &kp UP        XXX         XXX            XXX
+        XXX         XXX         XXX          XXX             XXX            XXX             &kp HOME  &kp LEFT        &kp DOWN      &kp RIGHT   &kp END        XXX
+        XXX         XXX         XXX          XXX             XXX            XXX             XXX       &kp PG_DN       XXX           XXX         XXX            XXX
+                                XXX          &kp LSHIFT      &lt SYM SPACE  &kp LALT        &mo FUN   &lt NAV RETURN  &kp RSHIFT    XXX
       >;
     };
 
