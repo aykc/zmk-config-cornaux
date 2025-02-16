@@ -48,7 +48,19 @@ ZMK_HOLD_TAP(hmr,
 
 /* tap_dance for russian ru_soft/hard key */
 ZMK_TAP_DANCE(td_ru_soft_hard, bindings = <&ru_soft>, <&ru_hard>;
-              tapping-term-ms = <200>;)
+              tapping-term-ms = <150>;)
+
+/* tap_dance for russian ru_ye/yo key */
+ZMK_TAP_DANCE(td_ru_ye_yo, bindings = <&ru_ye>, <&ru_yo>;
+              tapping-term-ms = <150>;)
+
+// Define mod-morph with a *single* mod trigger for less repetition.
+#define SIMPLE_MORPH(NAME, MOD, BINDING1, BINDING2)                            \
+  ZMK_MOD_MORPH(NAME, mods = <(MOD_L##MOD | MOD_R##MOD)>;                      \
+                bindings = <BINDING1>, <BINDING2>;)
+
+// Tap: dot | Shift + tap: comma
+SIMPLE_MORPH(dot_morph, SFT, &kp DOT, &kp COMMA)
 
 / {
   conditional_layers {
@@ -80,9 +92,9 @@ ZMK_TAP_DANCE(td_ru_soft_hard, bindings = <&ru_soft>, <&ru_hard>;
     ru_layer {
       display-name = "base ru";
       bindings = <
-        &kp ESCAPE  &ru_y            &ru_ts             &ru_u              &ru_k               &ru_ye              &ru_n         &ru_g                &ru_sh             &ru_shch          &ru_z            &kp BSPC
+        &kp ESCAPE  &ru_y            &ru_ts             &ru_u              &ru_k               &td_ru_ye_yo        &ru_n         &ru_g                &ru_sh             &ru_shch          &ru_z            &kp BSPC
         &kp TAB     &ru_f            &ru_bi             &ru_v              &ru_a               &ru_p               &ru_r         &ru_o                &ru_l              &ru_d             &ru_zh           &ru_e
-        &kp CAPS    &ru_ya           &ru_ch             &ru_s              &ru_m               &ru_i               &ru_t         &td_ru_soft_hard     &ru_b              &ru_yu            &ru_kh           &ru_yo
+        &kp CAPS    &ru_ya           &ru_ch             &ru_s              &ru_m               &ru_i               &ru_t         &td_ru_soft_hard     &ru_b              &ru_yu            &ru_kh           &dot_morph
                                      &to EN             &kp LSHIFT         &lt SYM SPACE       &kp LALT            &kp RALT      &lt NAV RETURN       &kp RSHIFT         &kp DEL
       >;
     };
