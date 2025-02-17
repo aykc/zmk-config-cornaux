@@ -93,7 +93,7 @@ SIMPLE_MORPH(dot_morph, SFT, &kp DOT, &kp COMMA)
       display-name = "base ru";
       bindings = <
         &kp ESCAPE  &ru_y            &ru_ts             &ru_u              &ru_k               &td_ru_ye_yo        &ru_n         &ru_g                &ru_sh             &ru_shch          &ru_z            &kp BSPC
-        &kp TAB     &ru_f            &ru_bi             &ru_v              &ru_a               &ru_p               &ru_r         &ru_o                &ru_l              &ru_d             &ru_zh           &ru_e
+        &kp TAB     &hml LGUI &ru_f  &hml LALT &ru_bi   &hml LCTRL &ru_v   &hml LSHIFT &ru_a   &ru_p               &ru_r         &hmr RSHIFT &ru_o    &hmr RCTRL &ru_l   &hmr RALT &ru_d   &hmr RGUI &ru_zh &ru_e
         &kp CAPS    &ru_ya           &ru_ch             &ru_s              &ru_m               &ru_i               &ru_t         &td_ru_soft_hard     &ru_b              &ru_yu            &ru_kh           &dot_morph
                                      &to EN             &kp LSHIFT         &lt SYM SPACE       &kp LALT            &kp RALT      &lt NAV RETURN       &kp RSHIFT         &kp DEL
       >;
