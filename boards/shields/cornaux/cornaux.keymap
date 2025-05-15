@@ -9,6 +9,8 @@
 #include "key-labels.h"
 #include "zmk-helpers/unicode-chars/russian.dtsi"
 
+#include "combos.dtsi"
+
 #define ___ &trans
 #define XXX &none
 
